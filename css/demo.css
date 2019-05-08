@@ -711,6 +711,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 0.98rem;
 }
 .Ranking_Top{
     width: 100%;
@@ -794,6 +795,7 @@ img {
     padding: 0.2rem 0.4rem;
     background:linear-gradient(0deg,rgba(255,255,255,1) 98%,rgba(254,60,50,1) 100%);
     overflow: hidden;
+    position: relative;
 }
 .Ranking_BBox .div{
     width: 5.7rem;
@@ -804,13 +806,22 @@ img {
     bottom: 0;
 
 }
-.Ranking_BBox_U1{
+.Ranking_BBox_U1,.Ranking_BBox_U2{
     width: 5.7rem;
     height: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     /*overflow: auto;*/
+    position: absolute;
+}
+.Ranking_BBox_Ul{
+    width: 5.7rem;
+    /*height: 7rem;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     position: absolute;
 }
 .Ranking_BBox_Ul li{
