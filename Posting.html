@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发帖</title>
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/demo.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/mui.js"></script>
+</head>
+<body>
+    <div class="Posting">
+        <div class="Posting1">
+            <div class="Posting1L">客服微信</div>
+            <div class="Posting1R">12345678</div>
+        </div>
+        <div class="Posting2">
+            <div class="Posting2Title">目标筹粮</div>
+            <input type="number" placeholder="请输入筹粮数量(请输入数字)">
+        </div>
+        <div class="Posting3">
+            <div class="Posting3Title">狗粮厂商</div>
+            <input type="text" placeholder="请选择..." value="" id="select1"/>
+        </div>
+        <div class="Posting4">
+            <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=t0854e68let" allowFullScreen="true" style="width: 100%;height: 100%"></iframe>
+<!--            <video src=""></video>-->
+<!--            <img src="./images/Posting4.png" alt="">-->
+<!--            <img src="./images/bofangIcon.png" alt="" class="Posting4Bo">-->
+        </div>
+        <div class="Posting5">
+            <div class="Posting5Title">帖子标题</div>
+            <input type="text" maxlength="20" placeholder="请输入标题(最多输入20字)">
+            <div class="Posting5num"><span>0/20</span></div>
+        </div>
+        <div class="Posting6">
+            <div class="Posting6Title">帖子故事</div>
+            <textarea name="" id="" cols="30" rows="10" maxlength="300" placeholder="请输入内容(最多输入300字)"></textarea>
+            <div class="Posting6num"><span>0/300</span></div>
+        </div>
+        <div class="Posting7">
+            <div class="Posting7Title">上传基地图片</div>
+            <ul class="Posting7_Box">
+                <li class="Posting7_BoxLi">
+                    <img src="./images/ImgUp.png" alt="">
+                    <span>上传首页图</span>
+                </li>
+                <li class="Posting7_BoxLi">
+                    <img src="./images/ImgUp.png" alt="">
+                    <span>上传其他图片</span>
+                </li>
+                <li class="Posting7_BoxLi">
+                    <img src="./images/ImgUp3.png" alt="">
+                </li>
+                <li class="Posting7_BoxLi">
+                    <img src="./images/ImgUp3.png" alt="">
+                </li>
+                <li class="Posting7_BoxLi">
+                    <img src="./images/ImgUp3.png" alt="">
+                </li>
+                <li class="Posting7_BoxLi">
+                    <img src="./images/ImgUp3.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="RankingBtn"><a href="javascript:;">提交</a></div>
+    </div>
+    <nav class="bar">
+        <a href="demo.html">
+            <div class="tab">
+                <div class="tabImg">
+                    <img src="./images/tab1.png" alt="">
+                </div>
+                <span>首页</span>
+            </div>
+        </a>
+        <a href="./find.html">
+            <div class="tab">
+                <div class="tabImg">
+                    <img src="./images/tab2.png" alt="">
+                </div>
+                <span>发现</span>
+            </div>
+        </a>
+        <a href="./BaseCertification.html">
+            <div class="tab">
+                <div class="tabImg">
+                    <img src="./images/tab3.png" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="./RankingList.html">
+            <div class="tab">
+                <div class="tabImg">
+                    <img src="./images/tab4.png" alt="">
+                </div>
+                <span>排行榜</span>
+            </div>
+        </a>
+        <a href="javascript:;">
+            <div class="tab">
+                <div class="tabImg">
+                    <img src="./images/tab5.png" alt="">
+                </div>
+                <span>我的</span>
+            </div>
+        </a>
+
+    </nav>
+</body>
+<script>
+    $(".Posting5 input:text").bind("input propertychange",function(){
+        $(this).attr('maxlength',20);
+        console.log($(this).val().length);//打印输入框字符长度
+        $('.Posting5num span').text( $(this).val().length +'/20' );
+    });
+    var len = 0;
+    $('.Posting6 textarea').on("keyup",function(e){
+        if( len >= 30 && e.keyCode!=8 ){
+            return;
+        }else{
+            // 取出回车字符
+            var textareaVal = (($(this).val().replace(/<(.+?)>/gi,"&lt;$1&gt;")).replace(/ /gi,"&nbsp;")).replace(/\n/gi,"|");
+            // 回车数量
+            var entLen = textareaVal.split('|').length-1;
+            // 不包含回车的数量
+            var strLen = textareaVal.split('|').join('').length;
+            $(this).attr('maxlength',300+(entLen*2));
+            var nbspStr = textareaVal.replace(/ /gi,"&nbsp;");
+            // 空格数量
+            var nbspLen = 0;
+            nbspLen = nbspStr.split('&nbsp;').length-1;
+            len = (strLen + nbspLen) - (nbspLen*6);
+            $('.Posting6num span').text( len +'/300' );
+        }
+    });
+</script>
+</html>

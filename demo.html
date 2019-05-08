@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>首页</title>
+	<link rel="stylesheet" href="./css/mui.min.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/demo.css">
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/rem.js"></script>
+	<script src="./js/mui.js"></script>
+</head>
+<body>
+	<!--  -->
+	<div class="mui-content">
+		<!-- 头部bannerstart -->
+		<div class="banner_Box">
+			<!-- 解决margin-top的BUG -->
+			<div style="overflow: hidden;"></div>
+			<!-- 搜索框 start -->
+			<div class="banner_search">
+				<a href="./TwoLevelPage/search.html">
+				<input class="banner_search_in" type="" name="" id="" value="" placeholder="请输入商品名称"/>
+				<div class="banner_search_img">
+					<img src="./images/search.png" alt="">
+				</div>
+				</a>
+			</div>
+			<!-- 搜索框 end -->
+			
+			<!-- 轮播 start -->
+			<div class="banner">
+
+
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="./list/chouliangList.html">
+									<img src="./images/banner.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="./list/chouliangList.html">
+									<img src="./images/banner.png" alt="">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="./list/chouliangList.html">
+									<img src="./images/banner.png" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+			</div>
+			<script>
+				// var gallery = mui('.mui-slider');
+				// 	gallery.slider({
+				// 		interval: 500
+				// 	});
+				var swiper = new Swiper('.swiper-container', {
+					autoplay:true,
+					// autoplay: {
+    				// 	delay: 3000,
+    				// 	stopOnLastSlide: false,
+    				// 	disableOnInteraction: true,
+    				// },
+					pagination: {
+						el: '.swiper-pagination',
+					},
+				});
+			</script>
+			<!-- 轮播 end -->
+			
+			<!-- 数据 start -->
+			
+			<div class="banner_bot">
+					<div class="banner_botB">
+						<div class="banner_botBT">290</div>
+						<div class="banner_botBB">
+							<div class="banner_botBBI"> <img src="./images/renshu.png" alt=""> </div>
+							<div class="banner_botBBT">支持人数</div>
+						</div>
+					</div>
+					<div class="banner_botB">
+						<div class="banner_botBT">42,933</div>
+						<div class="banner_botBB">
+							<div class="banner_botBBI"> <img src="./images/jine.png" alt=""> </div>
+							<div class="banner_botBBT">已筹金额</div>
+						</div>
+					</div>
+					<div class="banner_botB">
+						<div class="banner_botBT">90%</div>
+						<div class="banner_botBB">
+							<div class="banner_botBBI"> <img src="./images/shijian.png" alt=""> </div>
+							<div class="banner_botBBT">达成率</div>
+						</div>
+					</div>
+			</div>
+			
+			<!-- 数据 start -->
+			
+			<!-- 三角 start -->
+			
+			<div class="banner_sanjiao">
+				<div class="banner_sanjiaoBox">
+					
+				</div>
+				<div class="banner_sanjiaoBoxB">
+					<img src="./images/sanjiao.png" alt="">
+				</div>
+			</div>
+			
+			<!-- 三角 end -->
+			
+		</div>
+		
+		
+		
+
+		</div>
+		<!-- 头部banner end -->
+				
+		<!-- 主要宣传 start -->
+		
+		<div class="section">
+			<div class="Propaganda">
+				<a href="">
+					<img src="./images/Propaganda1.png" alt="">
+					<div class="PropagandaT">
+						<div class="PropagandaTT">有奖活动</div>
+						<div class="PropagandaTB">捐爱心 享生活</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="Propaganda">
+				<a href="">
+					<img src="./images/Propaganda2.png" alt="">
+					<div class="PropagandaT">
+						<div class="PropagandaTT">爱心救助</div>
+						<div class="PropagandaTB">捐爱心 享生活</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="Propaganda">
+				<a href="">
+					<img src="./images/Propaganda3.png" alt="">
+					<div class="PropagandaT">
+						<div class="PropagandaTT">有奖活动</div>
+						<div class="PropagandaTB">捐爱心 享生活</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<!-- 主要宣传 end -->
+		
+		<!-- 分类1 start -->
+		<div class="ification">
+			
+			<div class="ification_Title">
+				<div class="ification_TitleBox">
+					<div class="ification_TitleBox1">筹宠粮</div>
+					<div class="ification_TitleBox2">流浪宠物</div>
+				</div>
+				<div class="ification_TitleMore"><a href="TwoLevelPage/chouchongliang.html">更多</a></div>
+			</div>
+			
+			<div class="ification_banner">
+				<img src="./images/ification_banner.png" alt="">
+				<div class="ification_bannerBox">
+					<div class="ification_bannerBoxT">
+						
+						<div class="ification_bannerBoxT1">
+							<div class="ification_bannerBoxT1I"><img src="./images/renshu.png" alt=""></div>
+							<div class="ification_bannerBoxT1T">支持</div>
+							<div class="ification_bannerBoxT1sj">90</div>
+						</div>
+						
+						<div class="ification_bannerBoxT1">
+							<div class="ification_bannerBoxT1I"><img src="./images/jine.png" alt=""></div>
+							<div class="ification_bannerBoxT1T">已筹</div>
+							<div class="ification_bannerBoxT1sj">42,933</div>
+						</div>
+						
+						<div class="ification_bannerBoxT1">
+							<div class="ification_bannerBoxT1I"><img src="./images/shijian.png" alt=""></div>
+							<div class="ification_bannerBoxT1T">达成</div>
+							<div class="ification_bannerBoxT1sj" >90%</div>
+						</div>
+					</div>
+					<div class="ification_bannerBoxB">
+						<div id="demo1" class="mui-progressbar">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ification_bannerText">
+				<div class="ification_bannerTextT">
+					<div class="ification_bannerTextTTitle">狗粮严重不足</div>
+					<div class="ification_bannerTextTTarget">1,555kg</div>
+				</div>
+				<div class="ification_bannerTextb">
+					狗粮严重不足，请大家伸出援手帮帮我们。狗粮严重不足，请大家伸出援手帮帮我们。
+				</div>
+			</div>
+			
+			<ul class="ification_List">
+				<li class="ification_ListLi">
+					<a href="./list/chouliangList.html">
+					<div class="ification_ListLiL">
+						<img src="./images/ification_banner1.png" alt="">
+					</div>
+					<div class="ification_ListLiR">
+						<div class="ification_ListLiR1">宠粮严重不足，请大家伸出援手</div>
+						<div class="ification_ListLiR2">宠物基地发起</div>
+						<div class="ification_ListLiR3">
+							<div class="ification_ListLiR3L">1,555kg</div>
+							<div class="ification_ListLiR3R">50%</div>
+						</div>
+						<div class="ification_ListLiR4">
+							<div id="demo2" class="mui-progressbar">
+								<span></span>
+							</div>
+						</div>
+						<div class="ification_ListLiR5">
+							<div class="ification_ListLiR5L">
+								<div class="ification_ListLiR5LL">
+									<img src="./images/renshu.png" alt="">
+								</div>
+								<div class="ification_ListLiR5LR">90</div>
+							</div>
+							<div class="ification_ListLiR5R">
+								<div class="ification_ListLiR5RL">
+									<img src="./images/jine.png" alt="">
+								</div>
+								<div class="ification_ListLiR5RR">42,933</div>
+							</div>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="ification_ListLi">
+					<a href="./list/chouliangList.html">
+					<div class="ification_ListLiL">
+						<img src="./images/ification_banner2.png" alt="">
+					</div>
+					<div class="ification_ListLiR">
+						<div class="ification_ListLiR1">宠粮严重不足，请大家伸出援手</div>
+						<div class="ification_ListLiR2">宠物基地发起</div>
+						<div class="ification_ListLiR3">
+							<div class="ification_ListLiR3L">1,555kg</div>
+							<div class="ification_ListLiR3R">50%</div>
+						</div>
+						<div class="ification_ListLiR4">
+							<div id="demo3" class="mui-progressbar">
+								<span></span>
+							</div>
+						</div>
+						<div class="ification_ListLiR5">
+							<div class="ification_ListLiR5L">
+								<div class="ification_ListLiR5LL">
+									<img src="./images/renshu.png" alt="">
+								</div>
+								<div class="ification_ListLiR5LR">90</div>
+							</div>
+							<div class="ification_ListLiR5R">
+								<div class="ification_ListLiR5RL">
+									<img src="./images/jine.png" alt="">
+								</div>
+								<div class="ification_ListLiR5RR">42,933</div>
+							</div>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="ification_ListLi">
+					<a href="./list/chouliangList.html">
+					<div class="ification_ListLiL">
+						<img src="./images/ification_banner3.png" alt="">
+					</div>
+					<div class="ification_ListLiR">
+						<div class="ification_ListLiR1">宠粮严重不足，请大家伸出援手</div>
+						<div class="ification_ListLiR2">宠物基地发起</div>
+						<div class="ification_ListLiR3">
+							<div class="ification_ListLiR3L">1,555kg</div>
+							<div class="ification_ListLiR3R">50%</div>
+						</div>
+						<div class="ification_ListLiR4">
+							<div id="demo4" class="mui-progressbar">
+								<span></span>
+							</div>
+						</div>
+						<div class="ification_ListLiR5">
+							<div class="ification_ListLiR5L">
+								<div class="ification_ListLiR5LL">
+									<img src="./images/renshu.png" alt="">
+								</div>
+								<div class="ification_ListLiR5LR">90</div>
+							</div>
+							<div class="ification_ListLiR5R">
+								<div class="ification_ListLiR5RL">
+									<img src="./images/jine.png" alt="">
+								</div>
+								<div class="ification_ListLiR5RR">42,933</div>
+							</div>
+						</div>
+					</div>
+					</a>
+				</li>
+				<li class="ification_ListLi">
+					<a href="./list/chouliangList.html">
+					<div class="ification_ListLiL">
+						<img src="./images/ification_banner1.png" alt="">
+					</div>
+					<div class="ification_ListLiR">
+						<div class="ification_ListLiR1">宠粮严重不足，请大家伸出援手</div>
+						<div class="ification_ListLiR2">宠物基地发起</div>
+						<div class="ification_ListLiR3">
+							<div class="ification_ListLiR3L">1,555kg</div>
+							<div class="ification_ListLiR3R">50%</div>
+						</div>
+						<div class="ification_ListLiR4">
+							<div id="demo5" class="mui-progressbar">
+								<span></span>
+							</div>
+						</div>
+						<div class="ification_ListLiR5">
+							<div class="ification_ListLiR5L">
+								<div class="ification_ListLiR5LL">
+									<img src="./images/renshu.png" alt="">
+								</div>
+								<div class="ification_ListLiR5LR">90</div>
+							</div>
+							<div class="ification_ListLiR5R">
+								<div class="ification_ListLiR5RL">
+									<img src="./images/jine.png" alt="">
+								</div>
+								<div class="ification_ListLiR5RR">42,933</div>
+							</div>
+						</div>
+					</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+		<script>
+			//初始化进度条
+			mui("#demo1").progressbar({progress:90}).show();
+			mui("#demo2").progressbar({progress:50}).show();
+			mui("#demo3").progressbar({progress:50}).show();
+			mui("#demo4").progressbar({progress:50}).show();
+			mui("#demo5").progressbar({progress:50}).show();
+
+			//    下拉刷新
+			mui.init({
+				pullRefresh : {
+					container:"#box",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down : {
+						style:'circle',//下拉刷新样式
+						color:'#2BD009', //默认“#2BD009” 下拉刷新控件颜色
+						height:'0.5rem',//默认50px.下拉刷新控件的高度,
+						range:'1rem', // 默认100px,控件可下拉拖拽的范围
+						offset:'0px', // 默认0px,下拉刷新控件的起始位置
+						auto: true,//默认false.首次加载自动上拉刷新一次
+						callback :pullfresh-function (){//刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+
+						}
+					}
+				}
+			});
+			//    上拉加载
+			mui.init({
+				pullRefresh : {
+					container:"#box",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+					up : {
+						height:50,//默认50.触发上拉加载拖动距离
+						auto:true,//默认false.自动上拉加载一次
+						contentrefresh : "正在加载...",//正在加载状态时，上拉加载控件上显示的标题内容
+						contentnomore:'没有更多数据了',//请求完毕若没有更多数据时显示的提醒内容；
+						callback :pullfresh-function (){//刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+
+						}
+					}
+				}
+			});
+
+		</script>
+		<!-- 分类1 end -->
+		<div class="Viewmore"><a href="TwoLevelPage/chouchongliang.html">查看更多</a></div>
+	</div>
+
+	<nav class="bar">
+		<a href="javascript:;">
+			<div class="tab active">
+				<div class="tabImg">
+					<img src="./images/seltab1.png" alt="">
+				</div>
+				<span>首页</span>
+			</div>
+		</a>
+		<a href="./find.html">
+			<div class="tab">
+				<div class="tabImg">
+					<img src="./images/tab2.png" alt="">
+				</div>
+				<span>发现</span>
+			</div>
+		</a>
+		<a href="./BaseCertification.html">
+			<div class="tab">
+				<div class="tabImg">
+					<img src="./images/tab1.png" alt="">
+				</div>
+			</div>
+		</a>
+		<a href="./RankingList.html">
+			<div class="tab">
+				<div class="tabImg">
+					<img src="./images/tab4.png" alt="">
+				</div>
+				<span>排行榜</span>
+			</div>
+		</a>
+		<a href="./my.html">
+			<div class="tab">
+				<div class="tabImg">
+					<img src="./images/tab5.png" alt="">
+				</div>
+				<span>我的</span>
+			</div>
+		</a>
+
+	</nav>
+</body>
+</html>	

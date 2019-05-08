@@ -1,0 +1,731 @@
+.AuthenticationProtocol{
+    width: 7.5rem;
+    padding: 0.4rem 0.3rem;
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+    line-height: 0.4rem;
+    margin:0 auto;
+}
+
+
+
+
+/*查看基地证明 Start*/
+.CheckBaseCertificate{
+    width: 7.5rem;
+    margin: 0 auto ;
+    background: #ffffff;
+}
+.CheckBaseCertificateUl{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0.3rem;
+}
+.CheckBaseCertificateUlLi{
+    width: 100%;
+    padding: 0.3rem 0;
+    border-bottom: 0.01rem solid #E5E5E5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size:0.3rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.CheckBaseCertificateUlLi span{
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+
+
+/*查看基地证明 End*/
+
+/* 举报 Start*/
+.Report{
+    width: 7.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.3rem;
+    background: #ffffff;
+    margin: 0 auto;
+}
+.Report1{
+    font-size:0.36rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+.Report2,.Report3,.Report3,.Report4,.Report5,.Report6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Report2Title{
+    font-size:0.28rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    padding: 0.3rem 0;
+}
+.Report2 input,.Report3 input,.Report3 input,.Report4 input,.Report5 input{
+    width:100%;
+    height:0.7rem;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(204,204,204,1);
+    box-shadow:0 0.02rem 0.1rem 0 rgba(131, 131, 131, 0.35);
+    border-radius:0.1rem;
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    margin: 0;
+}
+.Report6{
+    position: relative;
+}
+.Report6 textarea{
+    width:100%;
+    height:2rem;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(204,204,204,1);
+    box-shadow:0 0.02rem 0.1rem 0 rgba(131, 131, 131, 0.35);
+    border-radius:0.1rem;
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    margin: 0;
+    padding: 0.2rem;
+}
+.Report6num{
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.1rem;
+
+}
+.Report6num span{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+
+/* 举报 End*/
+/*支持 Start*/
+.Support{
+    width: 7.5rem;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Support1{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0.2rem;
+}
+.Support1L{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Support1LL{
+    width:1rem;
+    height:1rem;
+    border-radius:50%;
+    overflow: hidden;
+    margin-right: 0.45rem;
+}
+.Support1LR{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.Support1LRT{
+    font-size:0.3rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    margin-bottom: 0.28rem;
+}
+.Support1LRB{
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+.Support1R{
+    padding: 0.07rem;
+    font-size: 0.22rem;
+    font-weight:500;
+    color:rgba(30,162,255,1);
+    background:rgba(221,239,255,1);
+    border-radius:0.06rem;
+}
+.Support2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.Support2Title{
+    font-size:0.36rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    padding: 0.3rem 0;
+}
+.Support2B{
+    width:6.9rem;
+    height:3rem;
+    position: relative;
+    background:rgba(0,0,0,1);
+    opacity:0.5;
+    border-radius:0.2rem;
+    overflow: hidden;
+}
+.Support2B video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:6.9rem;
+    height:3rem;
+}
+.Support2B .Support2BBo {
+    width:0.66rem;
+    height:0.66rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.Support3T{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.Support3TLi{
+    width:2.2rem;
+    height:1rem;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(204,204,204,1);
+    border-radius:0.1rem;
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    margin-bottom: 0.25rem;
+    margin-right: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    line-height: 0.3rem;
+}
+.Support3TLi:nth-child(3\n){
+    margin-right: 0;
+}
+.Support3TLi.active{
+    border:0.02rem solid rgba(19,138,54,1);
+    color: #138A36;
+}
+.Support3TLi.active img{
+   opacity: 1;
+}
+.Support3TLi.active span{
+    color: #138A36;
+}
+.Support3TLi img{
+    width: 0.4rem;
+    height: 0.37rem;
+    position: absolute;
+    bottom: -0.01rem;
+    right: -0.01rem;
+    opacity: 0;
+}
+.Support3TLi span{
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+.Support3C{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.Support3C input{
+    width: 100%;
+    height:1rem;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(204,204,204,1);
+    border-radius:0.1rem;
+    padding: 0 0.2rem;
+    margin: 0;
+}
+
+.Support3C span{
+    position: absolute;
+    right: 0.2rem;
+}
+
+.Support3B .mui-table-view-cell .mui-navigate-right input {
+    position: absolute;
+    right: 0.3rem;
+    width: 50%;
+    /* height: 0.26rem; */
+    font-size: 0.28rem;
+    font-weight: 500;
+    color: rgba(179, 179, 179, 1);
+    border: 0;
+    text-align: right;
+}
+.Support3B .mui-table-view-cell{
+    border-bottom: 0;
+}
+.Support4C{
+    margin-bottom: 0.35rem;
+}
+.Support4C_Box{
+    width: 6.9rem;
+    height: 0.06rem;
+    background: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.03rem;
+
+}
+.Support4C_Box span{
+    width: 0.4rem;
+    height: 0.06rem;
+    background: #138A36;
+    border-radius: 0.03rem;
+
+}
+.Support4C_BoxNum{
+    transform: translateX(-0.4rem);
+    width:0.8rem;
+    height:0.3rem;
+    background:rgba(19,138,54,1);
+    border-radius:0.15rem;
+    font-size:0.22rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Support4B{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+
+.Support5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Support5Title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.Support5TitleL{
+    font-size:0.36rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+
+.Support5TitleR .mui-switch.mui-active{
+    border: 0.02rem solid #138A36;
+    background-color: #138A36;
+}
+.Support5T textarea{
+    width:6.9rem;
+    height:1.2rem;
+    background:rgba(255,255,255,1);
+    border:0.01rem solid rgba(204,204,204,1);
+    border-radius:0.1rem;
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+.Support5B{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.01rem solid #E5E5E5;
+}
+.Support5BL{
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+.Support6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Support6Title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+}
+.Support6TitleL{
+    font-size:0.36rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+.Support6T{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.Support6T .mui-input-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+.Support6T .mui-input-row label{
+    display: flex;
+    align-items: center;
+}
+.Support6T .mui-input-row img{
+width: 0.34rem;
+    height: 0.32rem;
+    margin-right: 0.24rem
+}
+.Support6T .mui-input-row input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Support6 .mui-checkbox input[type=checkbox], .mui-radio input[type=radio] {
+    width: 0.38rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0.38rem;
+}
+.Support6 .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {
+    font-size: 0.38rem;
+}
+
+.Support7{
+    width: 100%;
+    border-top: 0.01rem solid #e5e5e5;
+}
+.Support7 .mui-input-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.52rem 0;
+}
+.Support7 .mui-input-row label{
+    width: 5rem;
+    font-size:0.22rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+    padding: 0;
+}
+.Support7 .mui-checkbox input[type=checkbox], .mui-radio input[type=radio] {
+    width: 0.3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 0.3rem;
+}
+.Support7 .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {
+    font-size: 0.3rem;
+}
+.Support7 .mui-left{
+    left: 0.8rem;
+}
+
+.SupportBtn {
+    width: 6.9rem;
+    height: 0.8rem;
+    background: rgba(19, 138, 54, 1);
+    border-radius: 0.1rem;
+    margin: 0 auto;
+    font-size: 0.32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.SupportBtn a {
+    width: 100%;
+    height: 100%;
+    font-size: 0.32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/*支持 End*/
+
+/*优惠卷 Start*/
+.CouponUp{
+    width: 7.5rem;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.CouponUp1{
+    width: 6.25rem;
+    height: 6.65rem;
+    margin-bottom: 0.37rem;
+}
+.CouponUpclose{
+    width: 0.56rem;
+    height: 0.56rem;
+}
+
+/*优惠卷 End*/
+
+/*选择优惠卷 Start*/
+.SelectCoupon{
+    width: 7.5rem;
+    height: 100vh;
+    position: fixed;
+    /*z-index: 99;*/
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+}
+.SelectCoupon_Box{
+    width:6.1rem;
+    height:7.88rem;
+    background:rgba(255,255,255,1);
+    border-radius:0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem 0.4rem;
+}
+.SelectCoupon_BoxTitle{
+    font-size:0.4rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    padding-top: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+.SelectCoupon_BoxT{
+    width: 100%;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.SelectCoupon_BoxT .mui-input-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+}
+.SelectCoupon_BoxT .mui-input-row label{
+    display: flex;
+    align-items: center;
+}
+
+.SelectCoupon_BoxT .mui-input-row input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SelectCoupon_BoxT .mui-checkbox input[type=checkbox], .mui-radio input[type=radio] {
+    width: 0.42rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 0.42rem;
+    right: 0;
+}
+.SelectCoupon_BoxT .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {
+    font-size: 0.42rem;
+}
+.SelectCoupon_BoxB{
+    width: 100%;
+    overflow: auto;
+}
+.SelectCoupon_BoxBLi{
+    width: 100%;
+    height: 1.68rem;
+    background: #f5f5f5;
+    border-radius: 0.1rem;
+    margin: 0.2rem auto;
+    display: flex;
+    /*overflow: hidden;*/
+}
+.SelectCoupon_BoxBLi label{
+    width: 100%;
+    height: 1.68rem;
+    background: #f5f5f5;
+    border-radius: 0.1rem;
+    margin: 0 auto;
+    display: flex;
+}
+.SelectCoupon_BoxBL{
+    width: 1.5rem;
+    height: 1.68rem;
+    background: linear-gradient(6deg, rgba(254, 78, 128, 1) 0%, rgba(248, 130, 99, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.24rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+.SelectCoupon_BoxBLBox{
+
+    display: flex;
+    align-items: baseline;
+
+}
+.SelectCoupon_BoxBLBox p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+.SelectCoupon_BoxBLBox span {
+    font-size: 0.24rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 0.1rem;
+}
+.SelectCoupon_BoxBC{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #ffffff;
+}
+.SelectCoupon_BoxBC1{
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: #ffffff;
+}
+.SelectCoupon_BoxBC1:nth-child(1) {
+    position: absolute;
+    left: -0.09rem;
+    top: -0.1rem;
+}
+.SelectCoupon_BoxBC1:nth-last-child(1) {
+    position: absolute;
+    left: -0.09rem;
+    bottom: -0.1rem;
+}
+.SelectCoupon_BoxBR{
+    width: 5.1rem;
+    height: auto;
+    background: #fff;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.SelectCoupon_BoxBRL{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.SelectCoupon_BoxBRL1{
+    font-size:0.28rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+.SelectCoupon_BoxBRL2{
+    font-size:0.22rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+.SelectCoupon_BoxBRL3{
+    font-size:0.22rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+.SelectCoupon_BoxBRR{
+    width:0.42rem;
+    height:0.42rem;
+}
+.SelectCoupon_BoxBRR .mui-checkbox{
+    width:0.5rem;
+    height:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SelectCoupon_BoxBRR .mui-checkbox input{
+    width:0.42rem;
+    height:0.42rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.SelectCoupon_BoxBLi.active .SelectCoupon_BoxBL{
+    background: #f6f6f6;
+}
+.SelectCoupon_BoxBLi.active .SelectCoupon_BoxBRR .mui-checkbox input{
+    display: none;
+}
+.SelectCouponClose{
+    width: 0.56rem;
+    height: 0.56rem;
+    margin-top:0.46rem;
+}
+/*选择优惠卷 End*/

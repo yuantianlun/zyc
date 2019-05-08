@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改手机号码</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/MyTwoLevelPage.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/mui.js"></script>
+</head>
+<body style="background: #f7f7f7;">
+    <div class="EditPhone">
+        <div class="EditPhoneT">
+            <div class="EditPhoneTT">当前手机号：<span>13012344321</span></div>
+            <div class="EditPhoneTB">
+                <input type="number" placeholder="请输入验证码">
+<!--                <div class="EditPhoneTBBtn">发送验证码</div>-->
+                <input type="button" class="EditPhoneTBBtn" value="发送验证码" onclick="settime(this)">
+            </div>
+        </div>
+        <div class="EditPhoneB">
+            <div class="EditPhoneBT">如果原手机号码无法接收短信，请联系客服</div>
+            <input type="number" placeholder="输入新号码">
+        </div>
+    </div>
+<div class="EditPhoneBtn">
+    <a href="javascript:;">保存</a>
+</div>
+</body>
+</html>
+<script>
+    // var countdown=60;
+
+    // obj.on("click",function settime() { //发送验证码倒计时
+    //     console.log(1)
+    //     if (countdown == 0) {
+    //         obj.removeAttribute("disabled");
+    //         obj.val("免费获取验证码");
+    //         countdown = 60;
+    //         return;
+    //     } else {
+    //         obj.attr("disabled");
+    //         obj.val("重新发送(" + countdown + ")");
+    //         countdown--;
+    //     }
+    //     setTimeout(function() {
+    //             settime(obj) }
+    //         ,1000)
+    // })
+    var countdown=60;
+    var obj = $(".EditPhoneTBBtn");
+    function settime() {
+        if (countdown == 0) {
+            obj.removeAttr("disabled");
+            obj.val("免费获取验证码");
+            countdown = 60;
+            return;
+        } else {
+            obj.attr("disabled", true);
+            obj.val("重新发送(" + countdown + ")");
+            countdown--;
+        }
+        setTimeout(function() {
+                settime(obj) }
+            ,1000)
+    }
+</script>

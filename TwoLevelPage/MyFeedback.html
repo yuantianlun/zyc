@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意见反馈</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/MyTwoLevelPage.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/mui.js"></script>
+</head>
+<body style="background: #f5f5f5;">
+<div class="MyFeedback">
+    <div style="height: 0.2rem"></div>
+    <textarea class="MyFeedback_textarea" name="" id="" cols="30" rows="10" placeholder="感谢您对我们的支持，您的宝贵意见将是我们成长 的动力......"></textarea>
+    <div class="MyFeedbacknum"><span>0/200</span></div>
+</div>
+<div class="MyFeedbackBtn">
+    <a href="javascript:;">
+        提交
+    </a>
+</div>
+</body>
+</html>
+<script>
+    var len = 0;
+    $('.MyFeedback textarea').on("keyup",function(e){
+        if( len >= 30 && e.keyCode!=8 ){
+            return;
+        }else{
+            // 取出回车字符
+            var textareaVal = (($(this).val().replace(/<(.+?)>/gi,"&lt;$1&gt;")).replace(/ /gi,"&nbsp;")).replace(/\n/gi,"|");
+            // 回车数量
+            var entLen = textareaVal.split('|').length-1;
+            // 不包含回车的数量
+            var strLen = textareaVal.split('|').join('').length;
+            $(this).attr('maxlength',200+(entLen*2));
+            var nbspStr = textareaVal.replace(/ /gi,"&nbsp;");
+            // 空格数量
+            var nbspLen = 0;
+            nbspLen = nbspStr.split('&nbsp;').length-1;
+            len = (strLen + nbspLen) - (nbspLen*6);
+            $('.MyFeedbacknum span').text( len +'/200' );
+        }
+    });
+</script>

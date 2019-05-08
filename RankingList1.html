@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排行榜</title>
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/demo.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/rem.js"></script>
+    <script src="./js/mui.js"></script>
+    <script src="./js/mui.pullToRefresh.js"></script>
+    <script src="./js/mui.pullToRefresh.material.js"></script>
+</head>
+<body style="background: #ffffff;">
+
+<div class="Ranking">
+    <div class="Ranking_Top">
+        <img src="./images/Ranking_Top.png" alt="">
+        <div class="Ranking_TopB">
+            <div class="Ranking_TopL "><a href="./RankingList.html">支持排行</a></div>
+            <div class="Ranking_TopR active"><a href="javascript:;">基地排行</a></div>
+        </div>
+
+    </div>
+    <div class="Ranking_B">
+        <div class="Ranking_B1">
+            <div class="Ranking_B12">
+                <div class="Ranking_BBox">
+
+                    <div class="Ranking_BBox_U2 div" >
+                        <ul class="Ranking_BBox_Ul Ranking_BBox_Ul2">
+                            <li class="Ranking_BBox_UlTitle">
+                                <div>排名</div>
+                                <div>基地</div>
+                                <div>宠粮</div>
+                                <div>次数</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+
+                                    <span>爱心基地</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="bar">
+    <a href="demo.html">
+        <div class="tab">
+            <div class="tabImg">
+                <img src="./images/tab1.png" alt="">
+            </div>
+            <span>首页</span>
+        </div>
+    </a>
+    <a href="./find.html">
+        <div class="tab">
+            <div class="tabImg">
+                <img src="./images/tab2.png" alt="">
+            </div>
+            <span>发现</span>
+        </div>
+    </a>
+    <a href="./BaseCertification.html">
+        <div class="tab">
+            <div class="tabImg">
+                <img src="./images/tab1.png" alt="">
+            </div>
+        </div>
+    </a>
+    <a href="javascript:;">
+        <div class="tab active">
+            <div class="tabImg">
+                <img src="./images/seltab4.png" alt="">
+            </div>
+            <span>排行榜</span>
+        </div>
+    </a>
+    <a href="./my.html">
+        <div class="tab">
+            <div class="tabImg">
+                <img src="./images/tab5.png" alt="">
+            </div>
+            <span>我的</span>
+        </div>
+    </a>
+
+</nav>
+<script>
+    // $(".Ranking_TopB div").click(function() {
+    //     $(".Ranking_TopB div").eq($(this).index()).addClass("active").siblings().removeClass('active');
+    //     $(".Ranking_BBox .div").hide().eq($(this).index()).show();
+    // });
+
+
+
+
+    //    下拉刷新
+    mui.init({
+        pullRefresh : {
+            container:".Ranking_BBox_U2",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+            down : {
+                style:'circle',//下拉刷新样式
+                color:'#2BD009', //默认“#2BD009” 下拉刷新控件颜色
+                height:'0.5rem',//默认50px.下拉刷新控件的高度,
+                range:'1rem', // 默认100px,控件可下拉拖拽的范围
+                offset:'0px', // 默认0px,下拉刷新控件的起始位置
+                auto: true,//默认false.首次加载自动上拉刷新一次
+                callback:function (){//刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                    console.log(1);
+                    this.endPulldownToRefresh(true);
+                }
+            }
+        }
+    });
+    //    上拉加载
+    mui.init({
+        pullRefresh : {
+            container:".Ranking_BBox_U2",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+            up : {
+                height:50,//默认50.触发上拉加载拖动距离
+                auto:true,//默认false.自动上拉加载一次
+                contentrefresh : "正在加载...",//正在加载状态时，上拉加载控件上显示的标题内容
+                contentnomore:'没有更多数据了',//请求完毕若没有更多数据时显示的提醒内容；
+                callback:function (){//刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+                    console.log(1);
+                    this.endPullupToRefresh(true);//没有数据参数传true 显示没有更多数据
+                    //this.endPullupToRefresh(false);//有数据参数传false
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>

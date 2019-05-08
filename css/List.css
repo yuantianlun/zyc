@@ -1,0 +1,694 @@
+.GrainRaising{
+    width: 7.5rem;
+    margin: 0 auto;
+    /*margin-bottom: 0.8rem;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.GRList_banner{
+    width: 7.5rem;
+    height: 9.6rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.GRList_bannerImg{
+    width: 7.5rem;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(14,14,14,1) 50%,rgba(14,14,14,0) 100%);
+}
+.GRList_bannerB{
+    width: 7.5rem;
+    position: absolute;
+    bottom: 0.01rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0.3rem;
+}
+.GRList_bannerBT{
+    width:6.9rem;
+    height:3.07rem;
+    padding: 0.3rem;
+    background:rgba(255,255,255,.2);
+    display: flex;
+    flex-direction: column;
+}
+.GRList_bannerBTT{
+    font-size:0.4rem;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
+    border-bottom: 0.01rem solid rgba(255,255,255,.2);
+    line-height: 0.5rem;
+}
+.GRList_bannerBTB{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.GRList_bannerBTB1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.GRList_bannerBTB1T{
+    font-size:0.32rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+}
+.GRList_bannerBTB1B{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.GRList_bannerBTB1B img{
+    width: 0.22rem;
+    height: 0.22rem;
+    margin-right: 0.1rem;
+}
+.GRList_bannerBTB1B span{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(190,190,190,1);
+}
+.GRList_bannerBTB2{
+    width:0.01rem;
+    height:0.48rem;
+    background:rgba(255,255,255,.2);
+}
+.GRList_bannerBB{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.GRList_bannerBBL{
+    width: 6rem;
+}
+.mui-progressbar span{
+    background: #138A36;
+}
+.GRList_bannerBBR{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+
+
+/* content Start */
+.GRList_One{
+    width: 100%;
+    background: #ffffff;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.GRList_One1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.27rem;
+}
+.GRList_One1L{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.GRList_One1LL{
+    font-size:0.3rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    margin-right: 0.26rem
+}
+.GRList_One1LR{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.GRList_One1LR a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.GRList_One1LR a img{
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.11rem;
+}
+.GRList_One1LR a span{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(255,132,0,1);
+}
+.GRList_One1R{
+    font-size: 0.26rem;
+    font-weight:500;
+    color:#333333;
+}
+.GRList_One1R span{
+    color:#138A36;
+}
+.GRList_One2{
+    width: 100%;
+    line-height: 26px;
+    margin-bottom: 0.26rem;
+}
+a {
+    text-decoration: none;
+    color: #138A36;
+}
+
+.GRList_One3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.GRList_One3List{
+    width: 2.22rem;
+    height:1.6rem;
+    border-radius:0.06rem;
+    margin-bottom: 0.12rem;
+    margin-right: 0.12rem;
+    overflow: hidden;
+}
+.GRList_One3List:nth-child(3){
+     margin-right: 0;
+ }
+.GRList_One3List:nth-child(6){
+    margin-right: 0;
+}
+.GRList_One3List:nth-child(9){
+    margin-right: 0;
+}
+.GRList_One4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.26rem;
+}
+.GRList_One4_Top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.GRList_One4_TopL{
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.GRList_One4_TopR{
+    width:1.6rem;
+    height:0.5rem;
+    border:0.01rem solid rgba(19,138,54,1);
+    border-radius:0.06rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GRList_One4_Bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.GRList_One4_BottomImg{
+    width: 0.22rem;
+    height: 0.22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.15rem;
+}
+.GRList_One4_BottomText{
+    font-size:0.22rem;
+    font-weight:400;
+    color:rgba(255,132,0,1);
+}
+.GRList_One5{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.26rem;
+}
+.GRList_One5_Top{
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    margin-bottom: 0.26rem;
+}
+.GRList_One5_Bottom{
+width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.GRList_One5_BottomB{
+    margin-right: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.GRList_Two{
+    margin-top: 0.2rem;
+    width: 100%;
+    padding: 0.3rem;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.GRList_Two_Title{
+    font-size:0.3rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+}
+.GRList_Two_Ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.GRList_Two_UlLi{
+    width: 100%;
+    padding: 0.3rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.GRList_Two_UlLiL{
+    width:0.6rem;
+    height:0.6rem;
+    border-radius:50%;
+    overflow: hidden;
+    margin-right: 0.18rem;
+}
+
+
+.GRList_Two_UlLi:nth-last-child(1){
+    border: 0;
+}
+
+
+
+
+.GRList_Two_UlLiR{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.GRList_Two_UlLiRT{
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.GRList_Two_UlLiRT span{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+    margin-left: 0.27rem;
+
+}
+.GRList_Two_UlLiRB{
+    margin-top: 0.22rem;
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+
+.GRList_Tab{
+    width: 7.5rem;
+    height: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow:0 0 0.18rem 0 rgba(172, 172, 172, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.GRList_Tab_Share{
+    width: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.GRList_Tab_Share img{
+    width: 0.28rem;
+    height: 0.28rem;
+    /*margin-bottom: 0.1rem;*/
+}
+.GRList_Tab_Share span{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+
+.GRList_Tab_Click{
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #138A36;
+}
+.GRList_Tab_Click a{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* content End */
+
+/*Share Start*/
+.Share_PopupBox{
+    width: 7.5rem;
+    height: 100vh;
+    background: rgba(14,14,14,.5);
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.2s;
+    overflow: hidden;
+}
+.Share_Popup{
+    width:7.5rem;
+    height:5.3rem;
+    background:rgba(255,255,255,1);
+    border-radius:0.2rem 0.2rem 0 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    transition: all 0.2s;
+
+}
+.Share_Popup_Top{
+    width: 100%;
+    padding: 0.45rem 0.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+.Share_Popup_TopLi{
+    width: 25%;
+    margin: 0.2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Share_Popup_TopLi img{
+width: 1rem;
+    height: 1rem;
+}
+.Share_Popup_TopLi span{
+    margin-top: 0.15rem;
+    font-size:0.3rem;
+    font-weight:500;
+    color:rgba(50,50,50,1);
+}
+
+.Share_Popup_Bottom{
+    width: 100%;
+    height: 0.98rem;
+    border-top: 0.01rem solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Share End*/
+
+/*  二维码 QRcode Start  */
+.QRcode_Box{
+    width: 7.5rem;
+    height: 100vh;
+    background: rgba(14,14,14,.5);
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.2s;
+    /*overflow: hidden;*/
+}
+.QRcode{
+    width:6.9rem;
+    height:9rem;
+    background:rgba(255,255,255,1);
+    border-radius:0.2rem;
+    position: absolute;
+    top: -1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0.18rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardImg{
+    width:6.9rem;
+    height:9rem;
+    position: absolute;
+    top: -1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.QRcode1{
+    width: 1rem;
+    height: 1rem;
+}
+.QRcode2{
+    width:6.3rem;
+    height:4.5rem;
+    border-radius:0.2rem;
+    padding: 0.2rem 0;
+}
+.QRcode3{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.QRcode3L{
+    width:1.15rem;
+    height:1.15rem;
+    border-radius:50%;
+    overflow: hidden;
+    margin-right: 0.38rem;
+}
+.QRcode3C{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.QRcode3CT{
+    font-size:0.32rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    margin-bottom: 0.2rem;
+}
+.QRcode3CB{
+    width: 2.8rem;
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+.QRcode3R{
+    position: relative;
+    bottom: -0.6rem;
+    width: 1.5rem;
+    height: 1.4rem;
+}
+.QRcode4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.QRcode4L{
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.38rem;
+
+}
+.QRcode4R{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.QRcode4RT{
+    font-size:0.44rem;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    margin-bottom: 0.2rem;
+}
+.QRcode4RB{
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+
+.QRcodeBtn{
+    width:6rem;
+    height:0.8rem;
+    background:rgba(19,138,54,1);
+    border-radius:0.1rem;
+    font-size:0.32rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /*top: 0;*/
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+
+/* QRcode End  */
+
+
+/*分享 Start*/
+.share_Box{
+    width: 7.5rem;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+}
+.share_Box1{
+    font-size:0.5rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 0.47rem;
+}
+.share_Box1yuan{
+    width: 0.15rem ;
+    height: 0.15rem;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 0.1rem;
+
+}
+.share_Box2{
+    font-size:0.4rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-bottom: 0.8rem;
+}
+.share_Box3{
+    font-size:0.26rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-bottom: 0.5rem;
+}
+.share_Box4,.share_Box5{
+    width: 3.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.share_Box4L,.share_Box4R{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.share_Box4LImg{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border:0.02rem solid #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+}
+.share_Box4LImg img{
+    width: 0.45rem;
+    height: 0.46rem;
+}
+.share_Box4L span,.share_Box4R span{
+    font-size:0.26rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+}
+.share_Box6{
+    width: 6rem;
+    height: 0.02rem;
+    background: #ffffff;
+    margin-bottom: 0.4rem;
+}
+.share_Box7{
+    font-size:0.3rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+}
+/*分享 End*/

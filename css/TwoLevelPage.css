@@ -1,0 +1,261 @@
+.findRelease_Top{
+    width: 7.5rem;
+    height: 0.9rem;
+    background: #ffffff;
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.2rem auto;
+}
+.findRelease_TopL{
+    width: 18%;
+    font-size:0.3rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    margin-right: 0.2rem;
+}
+.findRelease_Top input{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+.findRelease_Cen{
+    width: 7.5rem;
+    background: #ffffff;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.findRelease_CenT,.findRelease_CenB{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.findRelease_CenT_Title{
+    font-size:0.3rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    margin-bottom: 0.26rem;
+}
+.findRelease_CenT textarea{
+    width:6.9rem;
+    height:1.3rem;
+    border:1px solid rgba(229,229,229,1);
+    border-radius:10px;
+}
+.findRelease_CenT{
+    position: relative;
+}
+.findRelease_CenTnum{
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.2rem;
+}
+.findRelease_CenTnum span{
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+}
+.findRelease_CenB_Title{
+    margin: 0.3rem 0;
+    font-size:0.3rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+.findRelease_CenB_Up{
+    width:3rem;
+    height:2rem;
+    border:0.01rem solid rgba(229,229,229,1);
+    border-radius:0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.findRelease_CenB_UpImg{
+    width: 0.66rem;
+    height: 0.66rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.24rem;
+}
+.findRelease_CenB_Up span{
+    font-size:0.26rem;
+    font-weight:500;
+    color:rgba(204,204,204,1);
+}
+#findRelease_UpData{
+    width:6.9rem;
+    height:0.8rem;
+    background:rgba(19,138,54,1);
+    border-radius:0.1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size:0.32rem;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+}
+/*发帖成功 Start*/
+.PostingSuccess{
+    width: 7.5rem;
+    height: 100vh;
+    margin: 0 auto;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.PostingSuccess1{
+    width: 1.45rem;
+    height: 1.84rem;
+    margin-bottom: 0.53rem;
+}
+.PostingSuccess2{
+    font-size:0.4rem;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    margin-bottom: 1.6rem;
+}
+.PostingSuccess3{
+    width:100%;
+    padding: 0 1.05rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.PostingSuccess3L{
+     width:2.4rem;
+     height:0.8rem;
+     border:0.01rem solid rgba(204,204,204,1);
+     border-radius:0.1rem;
+ }
+.PostingSuccess3L a{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.32rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+.PostingSuccess3R{
+    width:2.4rem;
+    height:0.8rem;
+    border:0.01rem solid rgba(19,138,54,1);
+    border-radius:0.1rem;
+}
+.PostingSuccess3R a{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.32rem;
+    font-weight:500;
+    color:rgba(19,138,54,1);
+}
+
+
+/*发帖成功 End*/
+
+/*支付成功 Start*/
+.SuccessfulPayment3{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.SuccessfulPayment3L,.SuccessfulPayment3C{
+    width:1.6rem;
+    height:0.8rem;
+    border:1px solid rgba(204,204,204,1);
+    border-radius:0.1rem;
+    font-size:0.32rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+    line-height:0.4rem;
+}
+.SuccessfulPayment3L a,.SuccessfulPayment3C a{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.32rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+}
+.SuccessfulPayment3R{
+    width:1.6rem;
+    height:0.8rem;
+    border:1px solid rgba(19,138,54,1);
+    border-radius:0.1rem;
+    font-size:0.32rem;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+    line-height:0.4rem;
+}
+.SuccessfulPayment3R a{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.32rem;
+    font-weight:500;
+    color:rgba(19,138,54,1);
+}
+
+
+/*支付成功 End*/
+/*搜索 Start*/
+.Search{
+    width: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 0.28rem;
+    margin: 0 auto;
+}
+.SearchTop{
+    margin-bottom: 0.4rem;
+}
+.SearchBottomTitle{
+    font-size:0.28rem;
+    font-weight:500;
+    color:rgba(28,28,28,1);
+    margin-bottom: 0.3rem;
+}
+.SearchBottomB{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.SearchBottomBSect{
+    background:rgba(237,237,237,1);
+    border-radius:0.2rem;
+    font-size:0.24rem;
+    font-weight:500;
+    color:rgba(136,136,136,1);
+    padding: 0.1rem 0.2rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+
+/*搜索 End*/

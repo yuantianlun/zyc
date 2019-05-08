@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布</title>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/TwoLevelPage.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/rem.js"></script>
+    <script src="../js/mui.js"></script>
+</head>
+<body style="background:rgba(247,247,247,1);">
+<form class="">
+    <div class="findRelease_Top">
+        <div class="findRelease_TopL">标题：</div>
+        <input type="text" id="findRelease_Title" class="" placeholder="标题">
+    </div>
+    <div class="findRelease_Cen">
+        <div class="findRelease_CenT">
+            <div class="findRelease_CenT_Title">正文内容：</div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="findRelease_CenTnum"><span>0/100</span></div>
+        </div>
+        <div class="findRelease_CenB">
+            <div class="findRelease_CenB_Title">上传图片/视频：</div>
+            <div class="findRelease_CenB_Up">
+                <div class="findRelease_CenB_UpImg">
+                    <img src="../images/findRelease_CenB_UpImg.png" alt="">
+                </div>
+                <span>添加图片/视频</span>
+            </div>
+        </div>
+    </div>
+    <input type="submit" id="findRelease_UpData" class="findRelease_UpData" value="确认发布">
+</form>
+</body>
+</html>
+<script>
+    var len = 0;
+    $('.findRelease_CenT textarea').on("keyup",function(e){
+        if( len >= 30 && e.keyCode!=8 ){
+            return;
+        }else{
+            // 取出回车字符
+            var textareaVal = (($(this).val().replace(/<(.+?)>/gi,"&lt;$1&gt;")).replace(/ /gi,"&nbsp;")).replace(/\n/gi,"|");
+            // 回车数量
+            var entLen = textareaVal.split('|').length-1;
+            // 不包含回车的数量
+            var strLen = textareaVal.split('|').join('').length;
+            $(this).attr('maxlength',100+(entLen*2));
+            var nbspStr = textareaVal.replace(/ /gi,"&nbsp;");
+            // 空格数量
+            var nbspLen = 0;
+            nbspLen = nbspStr.split('&nbsp;').length-1;
+            len = (strLen + nbspLen) - (nbspLen*6);
+            $('.findRelease_CenTnum span').text( len +'/100' );
+        }
+    });
+</script>

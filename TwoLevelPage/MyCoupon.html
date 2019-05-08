@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的优惠卷</title>
+
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+
+    <link rel="stylesheet" href="../css/MyTwoLevelPage.css">
+    <script src="../js/rem.js"></script>
+    <script src="../js/mui.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+
+
+</head>
+<body style="background: #f5f5f5;">
+<div class="MyCoupon">
+    <div class="MyPost_Top">
+        <div class="MyPost_TopLi active" id="MyPostTaber1">未使用</div>
+        <div class="MyPost_TopLi" id="MyPostTaber2">已使用</div>
+        <div class="MyPost_TopLi" id="MyPostTaber3">已过期</div>
+    </div>
+    <div class="MyPost_Bot">
+        <ul class="MyPost_Bot1" style="display: block;">
+            <li class="MyCoupon_Bot">
+                <div class="MyCoupon_BotL">
+                    <div class="MyCoupon_BotLBox">
+                        <p>6</p> <span>折</span>
+                    </div>
+                </div>
+                <div class="MyCoupon_BotC">
+                    <div class="MyCoupon_BotC1"></div>
+                    <div class="MyCoupon_BotC1"></div>
+                </div>
+                <div class="MyCoupon_BotR">
+                    <div class="MyCoupon_BotRT">
+                        <div class="MyCoupon_BotRTL">捐赠筹款打折券</div>
+                        <div class="MyCoupon_BotRTR">打折券</div>
+                    </div>
+                    <div class="MyCoupon_BotRB">
+                        <div class="MyCoupon_BotRBL">
+                            <div class="MyCoupon_BotRBLT">2019.02.10至2019.02.15</div>
+                            <div class="MyCoupon_BotRBLB">仅限捐款使用</div>
+                        </div>
+                        <div class="MyCoupon_BotRBR">
+                            <a href="">立即使用</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+        <ul class="MyPost_Bot2">
+            <li class="MyCoupon_Bot">
+                <div class="MyCoupon_BotL" style="background: #D4D2D2;">
+                    <div class="MyCoupon_BotLBox">
+                        <p>6</p> <span>折</span>
+                    </div>
+                </div>
+                <div class="MyCoupon_BotC">
+                    <div class="MyCoupon_BotC1"></div>
+                    <div class="MyCoupon_BotC1"></div>
+                </div>
+                <div class="MyCoupon_BotR">
+                    <div class="MyCoupon_BotRT">
+                        <div class="MyCoupon_BotRTL">捐赠筹款打折券</div>
+<!--                        <div class="MyCoupon_BotRTR">打折券</div>-->
+                    </div>
+                    <div class="MyCoupon_BotRB">
+                        <div class="MyCoupon_BotRBL">
+                            <div class="MyCoupon_BotRBLT">2019.02.10至2019.02.15 <span>已使用</span></div>
+                            <div class="MyCoupon_BotRBLB">仅限捐款使用</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="MyPost_Bot3">
+            <li class="MyCoupon_Bot">
+                <div class="MyCoupon_BotL" style="background: #D4D2D2;">
+                    <div class="MyCoupon_BotLBox">
+                        <p>6</p> <span>折</span>
+                    </div>
+                </div>
+                <div class="MyCoupon_BotC">
+                    <div class="MyCoupon_BotC1"></div>
+                    <div class="MyCoupon_BotC1"></div>
+                </div>
+                <div class="MyCoupon_BotR">
+                    <div class="MyCoupon_BotRT">
+                        <div class="MyCoupon_BotRTL">捐赠筹款打折券</div>
+                        <!--                        <div class="MyCoupon_BotRTR">打折券</div>-->
+                    </div>
+                    <div class="MyCoupon_BotRB">
+                        <div class="MyCoupon_BotRBL">
+                            <div class="MyCoupon_BotRBLT">2019.02.10至2019.02.15 <span>已过期</span></div>
+                            <div class="MyCoupon_BotRBLB">仅限捐款使用</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
+<script>
+
+    $(".MyPost_Top .MyPost_TopLi").click(function() {
+        $(".MyPost_Top .MyPost_TopLi").eq($(this).index()).addClass("active").siblings().removeClass('active');
+        $(".MyPost_Bot ul").hide().eq($(this).index()).show();
+    });
+   
+
+</script>
+</body>
+</html>
