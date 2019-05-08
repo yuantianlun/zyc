@@ -800,15 +800,18 @@ img {
     height: 7rem;
     overflow: hidden;
     /*display: none;*/
+    position: absolute;
+    bottom: 0;
+
 }
-.Ranking_BBox_Ul{
+.Ranking_BBox_U1{
     width: 5.7rem;
     height: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: auto;
-
+    /*overflow: auto;*/
+    position: absolute;
 }
 .Ranking_BBox_Ul li{
     width: 100%;
