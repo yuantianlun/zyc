@@ -114,17 +114,105 @@
                             <div class="Ranking_BBox_UlLi3">3254kg</div>
                             <div class="Ranking_BBox_UlLi4">3254</div>
                         </li>
-                        <li class="Ranking_BBox_UlLi">
-                            <div class="Ranking_BBox_UlLi1">
-                                <span></span>
-                            </div>
-                            <div class="Ranking_BBox_UlLi2">
-                                <img src="" alt="">
-                                <span>大雄</span>
-                            </div>
-                            <div class="Ranking_BBox_UlLi3">3254kg</div>
-                            <div class="Ranking_BBox_UlLi4">3254</div>
-                        </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
+                            <li class="Ranking_BBox_UlLi">
+                                <div class="Ranking_BBox_UlLi1">
+                                    <span></span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi2">
+                                    <img src="" alt="">
+                                    <span>大雄</span>
+                                </div>
+                                <div class="Ranking_BBox_UlLi3">3254kg</div>
+                                <div class="Ranking_BBox_UlLi4">3254</div>
+                            </li>
 
                     </ul>
                     </div>
@@ -192,7 +280,7 @@
                 height:'0.5rem',//默认50px.下拉刷新控件的高度,
                 range:'1rem', // 默认100px,控件可下拉拖拽的范围
                 offset:'0px', // 默认0px,下拉刷新控件的起始位置
-                auto: true,//默认false.首次加载自动上拉刷新一次
+                auto: false,//默认false.首次加载自动上拉刷新一次
                 callback:function (){//刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
                     console.log(1);
                     this.endPulldownToRefresh(true);
@@ -203,7 +291,7 @@
 //    上拉加载
     mui.init({
         pullRefresh : {
-            container:".Ranking_BBox_U1",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+            container:"body",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
             up : {
                 height:50,//默认50.触发上拉加载拖动距离
                 auto:true,//默认false.自动上拉加载一次
